@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
     end
 
     def add
-        @item = params[:product]  
+        @item = params[:product]
         cart << @item
         redirect_to homepage_url
     end
